@@ -19,6 +19,7 @@
 		92F3C5BF17B007400005AA1A /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F3C5BD17B007400005AA1A /* MainStoryboard_iPhone.storyboard */; };
 		92F3C5C217B007400005AA1A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F3C5C017B007400005AA1A /* MainStoryboard_iPad.storyboard */; };
 		92F3C5C517B007400005AA1A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F3C5C417B007400005AA1A /* ViewController.m */; };
+		92F3C5CC17B007EA0005AA1A /* GCKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F3C5CB17B007EA0005AA1A /* GCKFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		92F3C5C117B007400005AA1A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		92F3C5C317B007400005AA1A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		92F3C5C417B007400005AA1A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		92F3C5CB17B007EA0005AA1A /* GCKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GCKFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 				92F3C5A617B007400005AA1A /* UIKit.framework in Frameworks */,
 				92F3C5A817B007400005AA1A /* Foundation.framework in Frameworks */,
 				92F3C5AA17B007400005AA1A /* CoreGraphics.framework in Frameworks */,
+				92F3C5CC17B007EA0005AA1A /* GCKFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +78,7 @@
 		92F3C5A417B007400005AA1A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				92F3C5CB17B007EA0005AA1A /* GCKFramework.framework */,
 				92F3C5A517B007400005AA1A /* UIKit.framework */,
 				92F3C5A717B007400005AA1A /* Foundation.framework */,
 				92F3C5A917B007400005AA1A /* CoreGraphics.framework */,
@@ -274,6 +278,10 @@
 		92F3C5C917B007400005AA1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Photoscreen/Photoscreen-Prefix.pch";
 				INFOPLIST_FILE = "Photoscreen/Photoscreen-Info.plist";
@@ -285,6 +293,10 @@
 		92F3C5CA17B007400005AA1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Photoscreen/Photoscreen-Prefix.pch";
 				INFOPLIST_FILE = "Photoscreen/Photoscreen-Info.plist";
@@ -312,6 +324,7 @@
 				92F3C5CA17B007400005AA1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
