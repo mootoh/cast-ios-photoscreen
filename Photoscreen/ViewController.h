@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GCKFramework/GCKFramework.h>
 
-@interface ViewController : UIViewController
+@class GCKContext;
+@class GCKDevice;
+@class GCKDeviceManager;
+
+@interface ViewController : UIViewController <GCKDeviceManagerListener>
+
+@property (nonatomic, strong, readwrite) GCKContext *context;
+@property (nonatomic, strong) GCKDeviceManager *deviceManager;
+@property (nonatomic, strong) GCKDevice *device;
+@property (nonatomic, strong) NSMutableArray *devices;
 
 @end
