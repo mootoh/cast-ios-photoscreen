@@ -4,21 +4,18 @@
   <script src="photoscreen.js"></script>
 
   <script type="text/javascript">
-
-    window.onload = onLoad;
-
-    function onLoad() {
+    window.onload = function() {
       cast.receiver.logger.setLevelValue(0);
     
       // Initialize and start the media playing receiver
       var receiver = new cast.receiver.Receiver('4ae9614b-5792-4ab3-97e5-cf69ea69f7cc', [cast.PhotoScreen.PROTOCOL], "", 5);
 
-      var photoscreen = new PhotoScreen();
+      var photoscreen = new cast.PhotoScreen(document.getElementById("photo"));
       photoscreen.channelHandler_.addChannelFactory(
         receiver.createChannelFactory(cast.PhotoScreen.PROTOCOL));
 
       receiver.start();
-    });
+    };
   </script>
   <title>Slide show</title>
   <body style="margin-left: 70px; margin-top: 48px;">
