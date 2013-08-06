@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://www.gstatic.com/cast/js/receiver/1.0/cast_receiver.js"></script>
+  <script src="photoscreen.js"></script>
+
+  <script type="text/javascript">
+
+    window.onload = onLoad;
+
+    function onLoad() {
+      cast.receiver.logger.setLevelValue(0);
+    
+      // Initialize and start the media playing receiver
+      var receiver = new cast.receiver.Receiver('4ae9614b-5792-4ab3-97e5-cf69ea69f7cc', [cast.PhotoScreen.PROTOCOL], "", 5);
+
+      var photoscreen = new PhotoScreen();
+      photoscreen.channelHandler_.addChannelFactory(
+        receiver.createChannelFactory(cast.PhotoScreen.PROTOCOL));
+
+      receiver.start();
+    });
+  </script>
+  <title>Slide show</title>
+  <body style="margin-left: 70px; margin-top: 48px;">
+    <h1 style="color: white">Photo slide show!</h1>
+    <img id="photo" />
+  </body>
+</html>
