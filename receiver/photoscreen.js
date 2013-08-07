@@ -28,19 +28,26 @@ var cast = window.cast || {};
     },
 
     onMessage: function(event) {
-      var message = event.message;
-      var idx = message.image_url;
+      try {
+        var message = event.message;
+        console.log('********onMessage********' + JSON.stringify(message));
 
-      console.log('********onMessage********' + JSON.stringify(message));
+        var command = message.command;
 
-      var image_urls = [
-        // "http://farm8.staticflickr.com/2836/9342179435_ea1361f989.jpg",
-        "http://farm3.staticflickr.com/2887/9188577195_2945b5443d.jpg",
-        "http://farm6.staticflickr.com/5471/9342194129_8b7ce4c67f.jpg",
-        "http://farm3.staticflickr.com/2836/9342193489_e72a63ce4a.jpg"];
-
-      console.log("image url = " + image_urls[idx-1]);
-      this.img.src = image_urls[idx-1];
+        if (command === 'sender_info') {
+          this.sender_ip   = message.ip_address;
+          this.sender_port = message.port;
+        } else if (command === 'show') {
+          var image_id = message.image_id;
+          var image_url = 'http://' + this.sender_ip + ':' + this.sender_port + '/' + image_id + '.jpg';
+          console.log("image url = " + image_url);
+          this.img.src = image_url;
+        } else {
+          console.log('Unknown command: ' + command);
+        }
+      } catch (ex) {
+        console.log('Exception: ' + ex);
+      }
     }
   };
 
