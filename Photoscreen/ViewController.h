@@ -10,13 +10,9 @@
 
 @class ALAssetsLibrary;
 
-@interface ViewController : UIViewController
+@interface ViewController : UICollectionViewController
 
 @property (nonatomic, strong) ALAssetsLibrary *assetsLibrary;
 @property (nonatomic, strong) NSMutableArray *assetsGroups;
-@property (nonatomic, strong) NSMutableArray *assets;
-@property (nonatomic) NSInteger currentAsset;
-
-- (IBAction)showPhoto:(id)sender;
 
 @end

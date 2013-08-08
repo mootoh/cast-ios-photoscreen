@@ -50,6 +50,7 @@
 		92F3C69417B22B8E0005AA1A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F3C69317B22B8E0005AA1A /* Security.framework */; };
 		92F3C69617B22B930005AA1A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F3C69517B22B930005AA1A /* CFNetwork.framework */; };
 		92F3C69E17B34B6D0005AA1A /* CastSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F3C69D17B34B6D0005AA1A /* CastSender.m */; };
+		92F3C6A117B364930005AA1A /* AssetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F3C6A017B364930005AA1A /* AssetsCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -130,6 +131,8 @@
 		92F3C69517B22B930005AA1A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		92F3C69C17B34B6D0005AA1A /* CastSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CastSender.h; sourceTree = "<group>"; };
 		92F3C69D17B34B6D0005AA1A /* CastSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CastSender.m; sourceTree = "<group>"; };
+		92F3C69F17B364920005AA1A /* AssetsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetsCollectionViewController.h; sourceTree = "<group>"; };
+		92F3C6A017B364930005AA1A /* AssetsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetsCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,14 +188,13 @@
 		92F3C5AB17B007400005AA1A /* Photoscreen */ = {
 			isa = PBXGroup;
 			children = (
+				92F3C6A217B364F50005AA1A /* Cast */,
 				92F3C5B417B007400005AA1A /* AppDelegate.h */,
 				92F3C5B517B007400005AA1A /* AppDelegate.m */,
 				92F3C5C317B007400005AA1A /* ViewController.h */,
 				92F3C5C417B007400005AA1A /* ViewController.m */,
-				92F3C5CD17B0B4A40005AA1A /* PhotoScreenMessageStream.h */,
-				92F3C5CE17B0B4A40005AA1A /* PhotoScreenMessageStream.m */,
-				92F3C69C17B34B6D0005AA1A /* CastSender.h */,
-				92F3C69D17B34B6D0005AA1A /* CastSender.m */,
+				92F3C69F17B364920005AA1A /* AssetsCollectionViewController.h */,
+				92F3C6A017B364930005AA1A /* AssetsCollectionViewController.m */,
 				92F3C5BD17B007400005AA1A /* MainStoryboard_iPhone.storyboard */,
 				92F3C5C017B007400005AA1A /* MainStoryboard_iPad.storyboard */,
 				92F3C5AC17B007400005AA1A /* Supporting Files */,
@@ -321,6 +323,17 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		92F3C6A217B364F50005AA1A /* Cast */ = {
+			isa = PBXGroup;
+			children = (
+				92F3C69C17B34B6D0005AA1A /* CastSender.h */,
+				92F3C69D17B34B6D0005AA1A /* CastSender.m */,
+				92F3C5CD17B0B4A40005AA1A /* PhotoScreenMessageStream.h */,
+				92F3C5CE17B0B4A40005AA1A /* PhotoScreenMessageStream.m */,
+			);
+			name = Cast;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -418,6 +431,7 @@
 				92F3C69017B22B790005AA1A /* ContextFilterLogFormatter.m in Sources */,
 				92F3C69117B22B790005AA1A /* DispatchQueueLogFormatter.m in Sources */,
 				92F3C69E17B34B6D0005AA1A /* CastSender.m in Sources */,
+				92F3C6A117B364930005AA1A /* AssetsCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

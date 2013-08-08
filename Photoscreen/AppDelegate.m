@@ -24,14 +24,10 @@
     [self.httpd setDocumentRoot:[self cacheURL]];
     
 	NSError *error = nil;
-	if([self.httpd start:&error])
-	{
+	if ([self.httpd start:&error])
 		NSLog(@"Started HTTP Server on port %hu", [self.httpd listeningPort]);
-	}
 	else
-	{
 		NSLog(@"Error starting HTTP Server: %@", error);
-	}
 }
 
 @end
