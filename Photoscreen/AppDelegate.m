@@ -7,11 +7,50 @@
 //
 
 #import "AppDelegate.h"
+#import "CastSender.h"
+#import "HTTPServer.h"
+#import "DDLog.h"
+#import "DDTTYLogger.h"
+
+@implementation AppDelegate (HTTPd)
+
+- (void) startServer
+{
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    
+    self.httpd = [[HTTPServer alloc] init];
+	[self.httpd setType:@"_http._tcp."];
+    [self.httpd setPort:kHTTPD_PORT];
+    [self.httpd setDocumentRoot:[self cacheURL]];
+    
+	NSError *error = nil;
+	if([self.httpd start:&error])
+	{
+		NSLog(@"Started HTTP Server on port %hu", [self.httpd listeningPort]);
+	}
+	else
+	{
+		NSLog(@"Error starting HTTP Server: %@", error);
+	}
+}
+
+@end
 
 @implementation AppDelegate
 
+- (NSString *) cacheURL
+{
+    NSFileManager *fm = [NSFileManager defaultManager];
+    NSArray *dirs = [fm URLsForDirectory:NSCachesDirectory inDomains:NSUserDomainMask];
+    NSURL *cacheURL = dirs[0];
+    
+    return [cacheURL relativePath];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.sender = [[CastSender alloc] init];
+    [self startServer];
     return YES;
 }
 							

@@ -10,4 +10,10 @@
 
 @implementation PhotoScreenMessageStream
 
+- (void) didReceiveMessage:(id)message
+{
+    [super didReceiveMessage:message];
+    NSLog(@"PhotoScreenMessageStream: didReceiveMessage: %@", message);
+}
+
 @end

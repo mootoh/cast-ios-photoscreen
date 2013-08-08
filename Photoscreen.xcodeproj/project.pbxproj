@@ -39,9 +39,7 @@
 		92F3C66F17B22B660005AA1A /* HTTPFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F3C65C17B22B660005AA1A /* HTTPFileResponse.m */; };
 		92F3C67017B22B660005AA1A /* HTTPRedirectResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F3C65E17B22B660005AA1A /* HTTPRedirectResponse.m */; };
 		92F3C67117B22B660005AA1A /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F3C66017B22B660005AA1A /* WebSocket.m */; };
-		92F3C68817B22B790005AA1A /* About.txt in Resources */ = {isa = PBXBuildFile; fileRef = 92F3C67317B22B790005AA1A /* About.txt */; };
 		92F3C68917B22B790005AA1A /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F3C67517B22B790005AA1A /* GCDAsyncSocket.m */; };
-		92F3C68A17B22B790005AA1A /* About.txt in Resources */ = {isa = PBXBuildFile; fileRef = 92F3C67717B22B790005AA1A /* About.txt */; };
 		92F3C68B17B22B790005AA1A /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F3C67917B22B790005AA1A /* DDAbstractDatabaseLogger.m */; };
 		92F3C68C17B22B790005AA1A /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F3C67B17B22B790005AA1A /* DDASLLogger.m */; };
 		92F3C68D17B22B790005AA1A /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F3C67D17B22B790005AA1A /* DDFileLogger.m */; };
@@ -49,9 +47,9 @@
 		92F3C68F17B22B790005AA1A /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F3C68117B22B790005AA1A /* DDTTYLogger.m */; };
 		92F3C69017B22B790005AA1A /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F3C68417B22B790005AA1A /* ContextFilterLogFormatter.m */; };
 		92F3C69117B22B790005AA1A /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F3C68617B22B790005AA1A /* DispatchQueueLogFormatter.m */; };
-		92F3C69217B22B790005AA1A /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 92F3C68717B22B790005AA1A /* README.txt */; };
 		92F3C69417B22B8E0005AA1A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F3C69317B22B8E0005AA1A /* Security.framework */; };
 		92F3C69617B22B930005AA1A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F3C69517B22B930005AA1A /* CFNetwork.framework */; };
+		92F3C69E17B34B6D0005AA1A /* CastSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F3C69D17B34B6D0005AA1A /* CastSender.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,10 +110,8 @@
 		92F3C65E17B22B660005AA1A /* HTTPRedirectResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRedirectResponse.m; sourceTree = "<group>"; };
 		92F3C65F17B22B660005AA1A /* WebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocket.h; sourceTree = "<group>"; };
 		92F3C66017B22B660005AA1A /* WebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSocket.m; sourceTree = "<group>"; };
-		92F3C67317B22B790005AA1A /* About.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = About.txt; sourceTree = "<group>"; };
 		92F3C67417B22B790005AA1A /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 		92F3C67517B22B790005AA1A /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
-		92F3C67717B22B790005AA1A /* About.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = About.txt; sourceTree = "<group>"; };
 		92F3C67817B22B790005AA1A /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
 		92F3C67917B22B790005AA1A /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
 		92F3C67A17B22B790005AA1A /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
@@ -130,9 +126,10 @@
 		92F3C68417B22B790005AA1A /* ContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextFilterLogFormatter.m; sourceTree = "<group>"; };
 		92F3C68517B22B790005AA1A /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
 		92F3C68617B22B790005AA1A /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
-		92F3C68717B22B790005AA1A /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		92F3C69317B22B8E0005AA1A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		92F3C69517B22B930005AA1A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		92F3C69C17B34B6D0005AA1A /* CastSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CastSender.h; sourceTree = "<group>"; };
+		92F3C69D17B34B6D0005AA1A /* CastSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CastSender.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,11 +189,13 @@
 				92F3C5B517B007400005AA1A /* AppDelegate.m */,
 				92F3C5C317B007400005AA1A /* ViewController.h */,
 				92F3C5C417B007400005AA1A /* ViewController.m */,
+				92F3C5CD17B0B4A40005AA1A /* PhotoScreenMessageStream.h */,
+				92F3C5CE17B0B4A40005AA1A /* PhotoScreenMessageStream.m */,
+				92F3C69C17B34B6D0005AA1A /* CastSender.h */,
+				92F3C69D17B34B6D0005AA1A /* CastSender.m */,
 				92F3C5BD17B007400005AA1A /* MainStoryboard_iPhone.storyboard */,
 				92F3C5C017B007400005AA1A /* MainStoryboard_iPad.storyboard */,
 				92F3C5AC17B007400005AA1A /* Supporting Files */,
-				92F3C5CD17B0B4A40005AA1A /* PhotoScreenMessageStream.h */,
-				92F3C5CE17B0B4A40005AA1A /* PhotoScreenMessageStream.m */,
 			);
 			path = Photoscreen;
 			sourceTree = "<group>";
@@ -287,7 +286,6 @@
 		92F3C67217B22B790005AA1A /* CocoaAsyncSocket */ = {
 			isa = PBXGroup;
 			children = (
-				92F3C67317B22B790005AA1A /* About.txt */,
 				92F3C67417B22B790005AA1A /* GCDAsyncSocket.h */,
 				92F3C67517B22B790005AA1A /* GCDAsyncSocket.m */,
 			);
@@ -297,7 +295,6 @@
 		92F3C67617B22B790005AA1A /* CocoaLumberjack */ = {
 			isa = PBXGroup;
 			children = (
-				92F3C67717B22B790005AA1A /* About.txt */,
 				92F3C67817B22B790005AA1A /* DDAbstractDatabaseLogger.h */,
 				92F3C67917B22B790005AA1A /* DDAbstractDatabaseLogger.m */,
 				92F3C67A17B22B790005AA1A /* DDASLLogger.h */,
@@ -320,7 +317,6 @@
 				92F3C68417B22B790005AA1A /* ContextFilterLogFormatter.m */,
 				92F3C68517B22B790005AA1A /* DispatchQueueLogFormatter.h */,
 				92F3C68617B22B790005AA1A /* DispatchQueueLogFormatter.m */,
-				92F3C68717B22B790005AA1A /* README.txt */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -382,9 +378,6 @@
 				92F3C5BC17B007400005AA1A /* Default-568h@2x.png in Resources */,
 				92F3C5BF17B007400005AA1A /* MainStoryboard_iPhone.storyboard in Resources */,
 				92F3C5C217B007400005AA1A /* MainStoryboard_iPad.storyboard in Resources */,
-				92F3C68817B22B790005AA1A /* About.txt in Resources */,
-				92F3C68A17B22B790005AA1A /* About.txt in Resources */,
-				92F3C69217B22B790005AA1A /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +417,7 @@
 				92F3C68F17B22B790005AA1A /* DDTTYLogger.m in Sources */,
 				92F3C69017B22B790005AA1A /* ContextFilterLogFormatter.m in Sources */,
 				92F3C69117B22B790005AA1A /* DispatchQueueLogFormatter.m in Sources */,
+				92F3C69E17B34B6D0005AA1A /* CastSender.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
